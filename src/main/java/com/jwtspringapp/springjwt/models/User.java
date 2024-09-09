@@ -14,6 +14,7 @@ import jakarta.validation.constraints.Size;
     @UniqueConstraint(columnNames = "email")
 })
 public class User {
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
@@ -35,15 +36,18 @@ public class User {
   @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
   private Set<Role> roles = new HashSet<>();
 
+  // Default constructor
   public User() {
   }
 
+  // Constructor with username, email, and password
   public User(String username, String email, String password) {
     this.username = username;
     this.email = email;
     this.password = password;
   }
 
+  // Getters and setters
   public Long getId() {
     return id;
   }
