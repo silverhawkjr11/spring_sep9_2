@@ -1,4 +1,62 @@
 # Spring Boot JWT Authentication example with Spring Security & Spring Data JPA
+~ took 37s
+❯ mysql -u root -p
+mysql: Deprecated program name. It will be removed in a future release, use '/usr/bin/mariadb' instead
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 168
+Server version: 11.4.2-MariaDB Arch Linux
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| springbootdb       |
+| sys                |
++--------------------+
+5 rows in set (0.118 sec)
+
+MariaDB [(none)]> ^C
+MariaDB [(none)]> ^C
+MariaDB [(none)]> INSERT INTO roles (id, name) VALUES (1, 'ROLE_USER');
+ERROR 1046 (3D000): No database selected
+MariaDB [(none)]> INSERT INTO roles (id, name) VALUES (2, 'ROLE_ADMIN');
+ERROR 1046 (3D000): No database selected
+MariaDB [(none)]> INSERT INTO roles (id, name) VALUES (3, 'ROLE_MODERATOR');
+ERROR 1046 (3D000): No database selected
+MariaDB [(none)]>
+MariaDB [(none)]> USE springbootdb;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [springbootdb]> INSERT INTO roles (id, name) VALUES (1, 'ROLE_USER');
+Query OK, 1 row affected (0.090 sec)
+
+MariaDB [springbootdb]> INSERT INTO roles (id, name) VALUES (2, 'ROLE_ADMIN');
+Query OK, 1 row affected (0.042 sec)
+
+MariaDB [springbootdb]> INSERT INTO roles (id, name) VALUES (3, 'ROLE_MODERATOR');
+Query OK, 1 row affected (0.083 sec)
+
+MariaDB [springbootdb]> SELECT * FROM roles;
++----+----------------+
+| id | name           |
++----+----------------+
+|  1 | ROLE_USER      |
+|  2 | ROLE_ADMIN     |
+|  3 | ROLE_MODERATOR |
++----+----------------+
+3 rows in set (0.001 sec)
+
+MariaDB [springbootdb]>
 
 ## User Registration, User Login and Authorization process.
 The diagram shows flow of how we implement User Registration, User Login and Authorization process.
