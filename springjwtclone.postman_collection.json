@@ -1,0 +1,397 @@
+{
+	"info": {
+		"_postman_id": "4e3aa477-68ce-44b5-b7da-980efb183392",
+		"name": "springjwtclone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29291983"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=9F7EAA034A6BF8102A84FFAA0E86BD1F"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"testuser\",\n    \"email\": \"testuser@example.com\",\n    \"password\": \"password123\",\n    \"role\": [\"user\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/api/auth/signup' \\\n--header 'Content-Type: application/json' \\\n--header 'Cookie: JSESSIONID=9F7EAA034A6BF8102A84FFAA0E86BD1F' \\\n--data-raw '{\n    \"username\": \"testuser\",\n    \"email\": \"testuser@example.com\",\n    \"password\": \"password123\",\n    \"role\": [\"user\"]\n}'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "signup Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=9F7EAA034A6BF8102A84FFAA0E86BD1F"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"testuser\",\n    \"email\": \"testuser@example.com\",\n    \"password\": \"password123\",\n    \"role\": [\"user\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/api/auth/signup' \\\n--header 'Content-Type: application/json' \\\n--header 'Cookie: JSESSIONID=9F7EAA034A6BF8102A84FFAA0E86BD1F' \\\n--data-raw '{\n    \"username\": \"testuser\",\n    \"email\": \"testuser@example.com\",\n    \"password\": \"password123\",\n    \"role\": [\"user\"]\n}'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "signup Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=9F7EAA034A6BF8102A84FFAA0E86BD1F"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"testuser3\",\n    \"email\": \"testuser3@example.com\",\n    \"password\": \"password123\",\n    \"role\": [\"admin\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/api/auth/signup' \\\n--header 'Content-Type: application/json' \\\n--header 'Cookie: JSESSIONID=9F7EAA034A6BF8102A84FFAA0E86BD1F' \\\n--data-raw '{\n    \"username\": \"testuser\",\n    \"email\": \"testuser@example.com\",\n    \"password\": \"password123\",\n    \"role\": [\"user\"]\n}'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/auth/signin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"testuser\",\n    \"password\": \"password123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/api/auth/signin' \\\n--header 'Content-Type: application/json' \\\n--data-raw '{\n    \"username\": \"testuser\",\n    \"password\": \"password123\"\n}'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/auth/signin Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"testuser2\",\n    \"password\": \"password123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/api/auth/signin' \\\n--header 'Content-Type: application/json' \\\n--data-raw '{\n    \"username\": \"testuser\",\n    \"password\": \"password123\"\n}'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/auth/signin Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"testuser3\",\n    \"password\": \"password123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/api/auth/signin' \\\n--header 'Content-Type: application/json' \\\n--data-raw '{\n    \"username\": \"testuser\",\n    \"password\": \"password123\"\n}'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/test/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/test/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"test",
+						"all"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request GET 'http://localhost:8080/api/test/all'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/test/user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlciIsImlhdCI6MTcyNTg2ODM3OCwiZXhwIjoxNzI1OTU0Nzc4fQ.pKrTJj8x_1uF7LyjAeF1vVrxJ3mhD-LXodUdkbwC9TU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlciIsImlhdCI6MTcyNTg2ODM3OCwiZXhwIjoxNzI1OTU0Nzc4fQ.pKrTJj8x_1uF7LyjAeF1vVrxJ3mhD-LXodUdkbwC9TU>"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/test/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"test",
+						"user"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request GET 'http://localhost:8080/api/test/user' \\\n--header 'Authorization: Bearer <JWT_TOKEN>'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/test/mod",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlcjIiLCJpYXQiOjE3MjU4NjkzMzgsImV4cCI6MTcyNTk1NTczOH0.QUBoFA1AUph7Ni4ItlaK6DxULcxbSEsF4vS_JaeH_n0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlcjIiLCJpYXQiOjE3MjU4NjkzMzgsImV4cCI6MTcyNTk1NTczOH0.QUBoFA1AUph7Ni4ItlaK6DxULcxbSEsF4vS_JaeH_n0>"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/test/mod",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"test",
+						"mod"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request GET 'http://localhost:8080/api/test/mod' \\\n--header 'Authorization: Bearer <JWT_TOKEN>'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/test/admin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlcjMiLCJpYXQiOjE3MjU4Njk0NzUsImV4cCI6MTcyNTk1NTg3NX0.Jv4nZl93VB9iNIi8toYjwBVKgyE8RSeX88U-Ryw9ZJs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <JWT_TOKEN>"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/test/admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"test",
+						"admin"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request GET 'http://localhost:8080/api/test/admin' \\\n--header 'Authorization: Bearer <JWT_TOKEN>'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <JWT_TOKEN>"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"profile"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request GET 'http://localhost:8080/api/profile' \\\n--header 'Authorization: Bearer <JWT_TOKEN>'\n"
+			},
+			"response": []
+		}
+	]
+}
